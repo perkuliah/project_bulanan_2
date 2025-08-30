@@ -1,0 +1,192 @@
+* {
+  font-family: "Delius", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #2c5364, #1c92d2);
+  color: #fff;
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: rgba(28,146,210,0.8);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-btn {
+  background: #fff;
+  color: #1c92d2;
+  border: none;
+  margin: 0 12px;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(28,146,210,0.2);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+  background: #1c92d2;
+  color: #fff;
+  transform: scale(1.08);
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(0,0,0,0.35);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  padding: 62px 54px;
+}
+.section {
+  display: none;
+  animation: fadeIn 0.8s;
+}
+.section.active {
+  display: block;
+}
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.profile-image {
+  border-radius: 50px;
+  width: 490px;
+  height: auto;
+}
+
+.biodata {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.jenjang_pendidikan {
+  list-style-type: none;
+  padding: 0;
+}
+.section-images img {
+  width: 650px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.contact {
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contacti img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  justify-content: space-between;
+  margin: 20px;
+  transition: transform 0.3s ease;
+  filter: grayscale(2);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.contacti img:hover {
+  transform: scale(1.2); /* Memperbesar gambar 1.2 kali ukuran asli */
+  filter: grayscale(0);
+}
+
+/* Responsive for Android/Handphone */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .nav-btn {
+    margin: 8px 0;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+  .container {
+    max-width: 98vw;
+    margin: 18px auto;
+    padding: 24px 8px;
+    border-radius: 12px;
+  }
+  .profile-image {
+    width: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 18px auto;
+  }
+  .biodata {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .section-images img {
+    width: 98vw;
+    max-width: 320px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+    align-items: flex-start;
+  }
+  .contacti img {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    display: block;
+  }
+  footer {
+    font-size: 0.85rem;
+    margin-top: 18px;
+    padding: 8px;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+
+.logo {
+  width: 450px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+

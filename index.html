@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Labib portofolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+<link rel="icon" href="images/my-logo.ico" type="image/x-icon" class="icon">
+  <style>
+    body {
+      font-family: 'Delius', cursive;
+    }
+  </style>
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <button class="nav-btn" onclick="showSection('home')">Home</button>
+    <button class="nav-btn" onclick="showSection('about')">Tentang</button>
+    <button class="nav-btn" onclick="showSection('projects')">Proyek</button>
+    <button class="nav-btn" onclick="showSection('contact')">Kontak</button>
+  </nav>
+  <div class="container">
+    <section id="home" class="section active">
+      <h1>WELCOME TO MY PORTOFOLIO</h1>
+      <p>ini adalah sebuah website portofolio yang hanya mengandung profile/biodata saja.</p>
+      <img src="images/my-logo.webp" alt="Logo_L" class="logo" />
+    </section>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Saya adalah web developer yang suka belajar dan berbagi.
+      <br>saya adalah seorang mahasiswa di politeknik IDN.<br>saya selalu bersemangat untuk mempelajari bahasa mark up dan juga bahasa pemrograman.</p>
+      <div class="biodata">
+      <img src="images/p5.webp" alt="foto saya" class="profile-image" />
+      <div class="t_biodata">
+      <h1> NAMA</h1>
+      <p> Labib Almubarok</p>
+      <h1> SEKOLAH</h1>
+      <p> Politeknik IDN</p>
+      <h1> KELAS</h1>
+      <p> TRPL-(D)-3.3-(kak Febryan)</p>
+      <h1> EMAIL</h1>
+      <p> labibalmubarok12@gmail.com</p>
+      <h1> ALAMAT</h1>
+      <p> Bentar-Salem-Brebes</p>
+      <h1> RIWAYAT PENDIDIKAN</h1>
+      <p>
+     <ul class="jenjang_pendidikan">
+      <li>MI Khoiro ummah</li>
+      <li>SMPTQ Al-Manshurah</li>
+      <li>MATQ Al-manshurah</li>
+     </ul>
+      </p>        
+      </div>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <div class="section-images">
+      <h2>Proyek</h2>
+        <p>Code website (html)</p>
+        <img src="images/kuyy.webp" alt="Kuyy Project" loading="lazy"/>
+        <p>Code website (css)</p>
+        <img src="images/landing-page.png" alt="Landing Page Project" loading="lazy"/>
+        <p>Code website (javascript)</p>
+        <img src="images/portal-image.png" alt="Portal Berita Project" loading="lazy"/>
+        </div>
+    </section>
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <div class="contacti">
+        <a href="https://wa.me/6281326142983">  
+        <img src="images/whatsapp.webp" alt="WhatsApp"  />
+        </a>
+        <a href="https://www.instagram.com/labib_almubarok26">
+        <img src="images/instagram.webp" alt="Instagram"  />
+        </a>
+      <a href="https://www.linkedin.com/in/labib-almubarok-51774a371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+        <img src="images/linkedin.webp" alt="LinkedIn"  />
+      </a>
+        
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 LABIB. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
