@@ -8,4 +8,4 @@ function showSection(id) {
   document.querySelector('.nav-btn[onclick*="' + id + '"]').classList.add('active');
 }
 // Tampilkan home saat pertama kali
-document.addEventListener('DOMContentLoaded', () => showSection('home'));
+document.addEventListener('DOMContentLoaded', () => showSection('about'));
